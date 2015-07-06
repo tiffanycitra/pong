@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Pong by Tiffany Citra</title>
+		<script defer src = "pong.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+		<style type = "text/css">
+			#canvas {
+				display: block;
+				margin: auto;
+			}
+			p {
+				font-size: 15px;
+				font-family: Ubuntu;
+				text-align: center;
+			}
+			#name {
+				font-size: 10px;
+				font-family: Ubuntu;
+			}
+		</style>
+	</head>
+
+	<body> 
+		<canvas id = "canvas" width = "750" height = "500"></canvas>
+		<p></p>
+		<div id = "userScore" style="width: 400; margin: 27%; display: inline" ></div>
+		<div id = "compScore" style="width: 400; margin: 16%; display: inline"></div>
+		<p><b>Too easy? Select your challenge(s):</b>
+			<input type = "checkbox" name = "challenge" id ="frenzy" onClick=""> Ball Frenzy
+			<input type = "checkbox" name = "challenge" id ="rock" onClick=""> Paddle Frenzy
+			<input type = "checkbox" name = "challenge" id ="paddle" disabled onClick=""> Paddle Frenzy++</p>
+		<p><i>Paddle Frenzy++</i> is enabled only when <i>Paddle Frenzy</i> mode is on</p>
+		<p id = "name">Pong (c) Tiffany Citra 2015</p>
+	</body>
+</html>
+
